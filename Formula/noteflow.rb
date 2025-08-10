@@ -10,24 +10,24 @@ class Noteflow < Formula
 
   def install
     # Build the application
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "-o", "noteflow", "."
+    system "go", "build", *std_go_args(ldflags: "-s -w"), "-o", "noteflow-go", "."
     
     # Install the binary
-    bin.install "noteflow"
+    bin.install "noteflow-go"
   end
 
   test do
     # Test that the binary was installed and can show version/help
-    system "#{bin}/noteflow", "--version"
+    system "#{bin}/noteflow-go", "--version"
   end
 
   def caveats
     <<~EOS
-      NoteFlow has been installed!
+      NoteFlow-Go has been installed as 'noteflow-go'!
       
-      To start using NoteFlow:
+      To start using NoteFlow-Go:
       1. Navigate to any project directory
-      2. Run: noteflow
+      2. Run: noteflow-go
       3. Open your browser to http://localhost:8000
       
       Features:
@@ -37,7 +37,9 @@ class Noteflow < Formula
       • Drag & drop file uploads
       • Multiple themes
       
-      Visit /global-tasks to manage tasks across all your NoteFlow folders.
+      Visit /global-tasks to manage tasks across all your NoteFlow-Go folders.
+      
+      Note: This installs as 'noteflow-go' to avoid conflicts with the Python version.
     EOS
   end
 end
