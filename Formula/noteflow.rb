@@ -1,10 +1,10 @@
 class Noteflow < Formula
   desc "Fast, lightweight, cross-platform note-taking application with markdown support"
   homepage "https://github.com/Xafloc/NoteFlow-Go"
-  url "https://github.com/Xafloc/NoteFlow-Go/archive/v1.7.5.tar.gz"
-  sha256 "f1577ba4a5503d491509dd01679e4b8798f79454599b347e171646ca09645bf2"
+  url "https://github.com/Xafloc/NoteFlow-Go/archive/v1.8.0.tar.gz"
+  sha256 "95e8352591e3fc8f918548b540c05b6300b0e21f4c24129e7138df4f8508a1c5"
   license "MIT"
-  version "1.7.5"
+  version "1.8.0"
 
   depends_on "go" => :build
 
