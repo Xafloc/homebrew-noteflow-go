@@ -1,10 +1,10 @@
 class Noteflow < Formula
   desc "Fast, lightweight, cross-platform note-taking application with markdown support"
   homepage "https://github.com/Xafloc/NoteFlow-Go"
-  url "https://github.com/Xafloc/NoteFlow-Go/archive/v1.8.0.tar.gz"
-  sha256 "95e8352591e3fc8f918548b540c05b6300b0e21f4c24129e7138df4f8508a1c5"
+  url "https://github.com/Xafloc/NoteFlow-Go/archive/v1.8.1.tar.gz"
+  sha256 "985eaa7ca9b9ca9549b5ebd411f6de19492616a2c8d4fbb978ce49013f1d0c77"
   license "MIT"
-  version "1.8.0"
+  version "1.8.1"
 
   depends_on "go" => :build
 
@@ -38,6 +38,7 @@ class Noteflow < Formula
       • Drag & drop file uploads
       • Multiple themes
       • AI assist (v1.7): chat your notes via any OpenAI-compatible endpoint
+      • Autosave (v1.8.1): background saves at configurable interval
       
       Visit /global-tasks to manage tasks across all your NoteFlow-Go folders.
       
